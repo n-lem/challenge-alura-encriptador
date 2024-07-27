@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
     <header>
         <img src="./assets/img/logo.svg" alt="Logo" class="logo">
@@ -13,7 +18,8 @@
     <main>
         <section class="entrada">
             <textarea id="textoEntrada" placeholder="Ingrese el texto aquí"></textarea>
-            <p class="instruccion">Solo letras minúsculas y sin acentos</p>
+            <p class="instruccion"><i class="fa-solid fa-circle-exclamation"></i> Solo letras minúsculas y sin acentos
+            </p>
             <div class="botones">
                 <button id="encriptar">Encriptar</button>
                 <button id="desencriptar">Desencriptar</button>
@@ -26,7 +32,8 @@
                 <p>Ingresa el texto que desees encriptar o desencriptar.</p>
             </div>
             <div id="resultadoLleno" class="oculto">
-                <textarea id="textoSalida" readonly aria-label="Resultado de la encriptación o desencriptación"></textarea>
+                <textarea id="textoSalida" readonly
+                    aria-label="Resultado de la encriptación o desencriptación"></textarea>
                 <button id="copiar">Copiar</button>
             </div>
         </section>
@@ -36,4 +43,5 @@
     </footer>
     <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
