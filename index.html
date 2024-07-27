@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo.svg" alt="Logo" class="logo">
+    </header>
+    <main>
+        <section class="entrada">
+            <textarea id="textoEntrada" placeholder="Ingrese el texto aquí"></textarea>
+            <p class="instruccion">Solo letras minúsculas y sin acentos</p>
+            <div class="botones">
+                <button id="encriptar">Encriptar</button>
+                <button id="desencriptar">Desencriptar</button>
+            </div>
+        </section>
+        <section class="salida">
+            <div id="resultadoVacio">
+                <img src="./assets/img/img.svg" alt="Ningún mensaje encontrado" class="imagen-resultado">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <div id="resultadoLleno" class="oculto">
+                <textarea id="textoSalida" readonly aria-label="Resultado de la encriptación o desencriptación"></textarea>
+                <button id="copiar">Copiar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Encriptador de Texto</p>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
